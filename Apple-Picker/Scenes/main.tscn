@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://4ij7ed8u4eue"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="losePoint_area" type="Area2D" parent="."]
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]

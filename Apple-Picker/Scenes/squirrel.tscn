@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://drnk0tu1k3th6"]
+
+[node name="squirrel" type="CharacterBody2D"]
+
+[node name="sprite_squirrel" type="AnimatedSprite2D" parent="."]

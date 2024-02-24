@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dx75iexrlc5h2"]
+
+[node name="Apple" type="RigidBody2D"]
+
+[node name="rigidBody_apple" type="RigidBody2D" parent="."]
+
+[node name="sprite_apple" type="Sprite2D" parent="rigidBody_apple"]
+
+[node name="collision_apple" type="CollisionShape2D" parent="rigidBody_apple"]
