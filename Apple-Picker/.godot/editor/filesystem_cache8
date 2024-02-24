@@ -1,0 +1,33 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1708731420
+icon.svg::CompressedTexture2D::3513376327161333723::1707582742::1707582748::1::::<><>::
+::res://assets/::1708555117
+::res://assets/animals/::1708555178
+Squirrel Sprite Sheet.png::CompressedTexture2D::7785552934814483603::1708555084::1708555178::1::::<><>::
+::res://assets/animals/Outline/::1708555178
+MiniBear.png::CompressedTexture2D::4332432843060619704::1675658929::1708555178::1::::<><>::
+MiniBird.png::CompressedTexture2D::2859764258262523832::1675659332::1708555178::1::::<><>::
+MiniBoar.png::CompressedTexture2D::9218542068272466578::1675659264::1708555178::1::::<><>::
+MiniBunny.png::CompressedTexture2D::7191437780911430606::1675659411::1708555178::1::::<><>::
+MiniDeer1.png::CompressedTexture2D::7235994370210570984::1675659080::1708555178::1::::<><>::
+MiniDeer2.png::CompressedTexture2D::435272271049927302::1675659147::1708555178::1::::<><>::
+MiniFox.png::CompressedTexture2D::4224134314250714008::1675659204::1708555178::1::::<><>::
+MiniWolf.png::CompressedTexture2D::751624516987421401::1675659028::1708555178::1::::<><>::
+::res://assets/animals/Without outline/::1708555178
+MiniBear.png::CompressedTexture2D::1340265067492967568::1675658948::1708555178::1::::<><>::
+MiniBird.png::CompressedTexture2D::1415109859522725970::1675659347::1708555178::1::::<><>::
+MiniBoar.png::CompressedTexture2D::1156179604663435696::1675659276::1708555178::1::::<><>::
+MiniBunny.png::CompressedTexture2D::1559299624290160484::1675659420::1708555178::1::::<><>::
+MiniDeer1.png::CompressedTexture2D::4313635507697438211::1675659090::1708555178::1::::<><>::
+MiniDeer2.png::CompressedTexture2D::246787268638956292::1675659165::1708555178::1::::<><>::
+MiniFox.png::CompressedTexture2D::1041021099881101625::1675659217::1708555178::1::::<><>::
+MiniWolf.png::CompressedTexture2D::3185528729145230303::1675659041::1708555178::1::::<><>::
+::res://assets/apple/::1708555091
+apple.bmp::CompressedTexture2D::5339712898382382488::1707586039::1708555091::1::::<><>::
+::res://assets/player/::1708555091
+red hood itch free Copy-Sheet.png::CompressedTexture2D::4776772095637242038::1602997886::1708555091::1::::<><>::
+::res://Scenes/::1708731101
+apple.tscn::PackedScene::8841501585429311521::1708647968::0::1::::<><>::
+main.tscn::PackedScene::2052595302130326852::1708648419::0::1::::<><>::
+player.tscn::PackedScene::7323953166910996575::1708731101::0::1::::<><>::
+squirrel.tscn::PackedScene::8379962148539466009::1708647737::0::1::::<><>::
