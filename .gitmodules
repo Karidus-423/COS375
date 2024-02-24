@@ -1,3 +1,6 @@
 [submodule "Roll-a-ball"]
 	path = Roll-a-ball
 	url = https://github.com/Karidus-423/Roll-a-ball
+[submodule "Apple-Picker"]
+path = Apple-Picker
+url = https://github.com/Karidus-423/Apple-Picker
