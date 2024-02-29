@@ -1,1 +1,10 @@
+res://Scenes/main.tscn
 res://Scenes/player.tscn
+res://Scenes/apple.tscn
+res://Scenes/squirrel.tscn
+res://scripts/apple_scene.gd
+res://scripts/main.gd
+res://scripts/player.gd
+res://scripts/HUD.gd
+res://scripts/ScoreLabel.gd
+res://scripts/LivesLabel.gd
