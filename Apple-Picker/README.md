@@ -2,4 +2,6 @@
 
 ## Demo
 
-https://github.com/Karidus-423/COS375/blob/master/Apple-Picker/assets/apple_picker_demo.mp4
+https://github.com/Karidus-423/COS375/assets/79239830/b62118cf-e5b8-4ee7-8655-822173b00d84
+
+
