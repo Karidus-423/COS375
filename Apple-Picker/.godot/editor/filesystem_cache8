@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708731420
+::res://::1709221805
 icon.svg::CompressedTexture2D::3513376327161333723::1707582742::1707582748::1::::<><>::
-::res://assets/::1708555117
+::res://assets/::1709085675
 ::res://assets/animals/::1708555178
 Squirrel Sprite Sheet.png::CompressedTexture2D::7785552934814483603::1708555084::1708555178::1::::<><>::
 ::res://assets/animals/Outline/::1708555178
@@ -22,12 +22,87 @@ MiniDeer1.png::CompressedTexture2D::4313635507697438211::1675659090::1708555178:
 MiniDeer2.png::CompressedTexture2D::246787268638956292::1675659165::1708555178::1::::<><>::
 MiniFox.png::CompressedTexture2D::1041021099881101625::1675659217::1708555178::1::::<><>::
 MiniWolf.png::CompressedTexture2D::3185528729145230303::1675659041::1708555178::1::::<><>::
-::res://assets/apple/::1708555091
+::res://assets/apple/::1709088496
 apple.bmp::CompressedTexture2D::5339712898382382488::1707586039::1708555091::1::::<><>::
+apple.png::CompressedTexture2D::2480952214106279454::1709088491::1709088496::1::::<><>::
+Froots N Veggies.png::CompressedTexture2D::9179713552683803445::1616085046::1709088496::1::::<><>::
+::res://assets/Forrest/::1709066735
+::res://assets/Forrest/Assets/::1709066941
+Buildings.png::CompressedTexture2D::16902555168054552::1664915752::1709066941::1::::<><>::
+Hive.png::CompressedTexture2D::7261587672927214179::1664915612::1709066941::1::::<><>::
+Interior-01.png::CompressedTexture2D::7037831096298327672::1667252130::1709066941::1::::<><>::
+Props-Rocks.png::CompressedTexture2D::5301595501545199620::1664915404::1709066941::1::::<><>::
+Tiles.png::CompressedTexture2D::6634597237000532241::1667252174::1709066941::1::::<><>::
+Tree-Assets.png::CompressedTexture2D::4988344880592536503::1667252190::1709066941::1::::<><>::
+::res://assets/Forrest/Background/::1709083189
+Background.png::CompressedTexture2D::6069712783972133930::1667252846::1709066941::1::::<><>::
+Hills Layer 01.png::CompressedTexture2D::6415288030507376210::1709083189::1709083189::1::::<><>::
+::res://assets/Forrest/Character/::1664915932
+::res://assets/Forrest/Character/Attack-01/::1709066941
+Attack-01-Sheet.png::CompressedTexture2D::5103132307416629351::1657237856::1709066941::1::::<><>::
+::res://assets/Forrest/Character/Dead/::1709066941
+Dead-Sheet.png::CompressedTexture2D::2848255228071967810::1657240808::1709066941::1::::<><>::
+::res://assets/Forrest/Character/Idle/::1709066941
+Idle-Sheet.png::CompressedTexture2D::844211018420424513::1657229276::1709066941::1::::<><>::
+::res://assets/Forrest/Character/Jumlp-All/::1709066941
+Jump-All-Sheet.png::CompressedTexture2D::4751337391325904365::1657240836::1709066941::1::::<><>::
+::res://assets/Forrest/Character/Jump/::1664915932
+::res://assets/Forrest/Character/Jump-End/::1709066941
+Jump-End-Sheet.png::CompressedTexture2D::657066913861880450::1657240970::1709066941::1::::<><>::
+::res://assets/Forrest/Character/Jump-Start/::1709066941
+Jump-Start-Sheet.png::CompressedTexture2D::6156149639079748408::1657240916::1709066941::1::::<><>::
+::res://assets/Forrest/Character/Run/::1709066941
+Run-Sheet.png::CompressedTexture2D::6285343429970041586::1657229242::1709066941::1::::<><>::
+::res://assets/Forrest/HUD/::1709066941
+Base-01.png::CompressedTexture2D::6919932278871799646::1656605766::1709066941::1::::<><>::
+::res://assets/Forrest/Mob/::1664915932
+::res://assets/Forrest/Mob/Boar/::1664915932
+::res://assets/Forrest/Mob/Boar/Hit-Vanish/::1709066941
+Hit-Sheet-Black.png::CompressedTexture2D::3212296202590456095::1664039424::1709066941::1::::<><>::
+Hit-Sheet-White.png::CompressedTexture2D::8424935331334875120::1664039454::1709066941::1::::<><>::
+Hit-Sheet.png::CompressedTexture2D::4802749806453960374::1656694742::1709066941::1::::<><>::
+::res://assets/Forrest/Mob/Boar/Idle/::1709066941
+Idle-Sheet-export-Back.png::CompressedTexture2D::2366361942911373280::1664039336::1709066941::1::::<><>::
+Idle-Sheet-White.png::CompressedTexture2D::6610243118910765124::1664039374::1709066941::1::::<><>::
+Idle-Sheet.png::CompressedTexture2D::5861500999304709325::1656694770::1709066941::1::::<><>::
+::res://assets/Forrest/Mob/Boar/Run/::1709066941
+Run-Sheet-Black.png::CompressedTexture2D::5763762051733158383::1664039152::1709066941::1::::<><>::
+Run-Sheet-White.png::CompressedTexture2D::2009694050061155873::1664039204::1709066941::1::::<><>::
+Run-Sheet.png::CompressedTexture2D::6070963644738906670::1656694790::1709066941::1::::<><>::
+::res://assets/Forrest/Mob/Boar/Walk/::1709066941
+Walk-Base-Sheet-White.png::CompressedTexture2D::3355847098676734244::1664039292::1709066941::1::::<><>::
+Walk-Base-Sheet.png::CompressedTexture2D::3527308519357808041::1656694816::1709066941::1::::<><>::
+Walk-Base-SheetBlack.png::CompressedTexture2D::8823530943917907826::1664039246::1709066941::1::::<><>::
+::res://assets/Forrest/Mob/Small Bee/::1664915932
+::res://assets/Forrest/Mob/Small Bee/Attack/::1709066941
+Attack-Sheet.png::CompressedTexture2D::5252537413060580091::1664569346::1709066941::1::::<><>::
+::res://assets/Forrest/Mob/Small Bee/Fly/::1709066941
+Fly-Sheet.png::CompressedTexture2D::2626066152295174053::1664569362::1709066941::1::::<><>::
+::res://assets/Forrest/Mob/Small Bee/Hit/::1709066941
+Hit-Sheet.png::CompressedTexture2D::6403779918579581358::1664569382::1709066941::1::::<><>::
+::res://assets/Forrest/Mob/Snail/::1709066941
+all.png::CompressedTexture2D::3308448807774945386::1635527246::1709066941::1::::<><>::
+Dead-Sheet.png::CompressedTexture2D::7741745569471981559::1635527246::1709066941::1::::<><>::
+Hide-Sheet.png::CompressedTexture2D::6129734104898561304::1635527246::1709066941::1::::<><>::
+walk-Sheet.png::CompressedTexture2D::8121395817321013337::1635527246::1709066941::1::::<><>::
+::res://assets/Forrest/Trees/::1709066941
+Background.png::CompressedTexture2D::2006697406293256251::1664915880::1709066941::1::::<><>::
+Dark-Tree.png::CompressedTexture2D::3730858671491430221::1657245836::1709066941::1::::<><>::
+Golden-Tree.png::CompressedTexture2D::8710678709552686040::1657040718::1709066941::1::::<><>::
+Green-Tree.png::CompressedTexture2D::7653651614625824906::1657040232::1709066941::1::::<><>::
+Red-Tree.png::CompressedTexture2D::725926682417361059::1657040732::1709066941::1::::<><>::
+Yellow-Tree.png::CompressedTexture2D::1845378617968207783::1657040364::1709066941::1::::<><>::
+::res://assets/light/::1709085815
+2d_lights_and_shadows_neutral_point_light.webp::CompressedTexture2D::8923034969019053122::1709085808::1709085810::1::::<><>::
 ::res://assets/player/::1708555091
 red hood itch free Copy-Sheet.png::CompressedTexture2D::4776772095637242038::1602997886::1708555091::1::::<><>::
-::res://Scenes/::1708731101
-apple.tscn::PackedScene::8841501585429311521::1708647968::0::1::::<><>::
-main.tscn::PackedScene::2052595302130326852::1708648419::0::1::::<><>::
-player.tscn::PackedScene::7323953166910996575::1708731101::0::1::::<><>::
-squirrel.tscn::PackedScene::8379962148539466009::1708647737::0::1::::<><>::
+::res://Scenes/::1709221781
+apple.tscn::PackedScene::8841501585429311521::1709221781::0::1::::<><>::res://scripts/apple_scene.gd<>uid://bbl16kdef41uw::::res://assets/apple/apple.png
+main.tscn::PackedScene::2052595302130326852::1709221781::0::1::::<><>::uid://dcl1o6bmpllmt::::res://Scenes/player.tscn<>uid://c1r332lbigigv::::res://assets/Forrest/Assets/Tiles.png<>res://scripts/main.gd<>uid://csqhju4o4r40m::::res://assets/Forrest/Background/Background.png<>uid://dx75iexrlc5h2::::res://Scenes/apple.tscn<>uid://d0enc2dpylvhi::::res://assets/light/2d_lights_and_shadows_neutral_point_light.webp
+player.tscn::PackedScene::7323953166910996575::1709221781::0::1::::<><>::res://scripts/player.gd<>uid://cab50dy14xy11::::res://assets/player/red hood itch free Copy-Sheet.png
+squirrel.tscn::PackedScene::8379962148539466009::1709221781::0::1::::<><>::
+::res://scripts/::1709221288
+apple_scene.gd::GDScript::-1::1709158807::0::1::::<>RigidBody2D<>::
+HUD.gd::GDScript::-1::1709221288::0::1::::<>CanvasLayer<>::
+main.gd::GDScript::-1::1709220635::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1709155849::0::1::::<>CharacterBody2D<>::
