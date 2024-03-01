@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://biyv0gmcaqhon"
+path="res://.godot/imported/grendelball.obj-d03ef1e2d89f104838ecd3c60853b25a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/grendelball.obj-d03ef1e2d89f104838ecd3c60853b25a.mesh"]
+
+source_file="res://assets/models/grendelball.obj"
+dest_files=["res://.godot/imported/grendelball.obj-d03ef1e2d89f104838ecd3c60853b25a.mesh", "res://.godot/imported/grendelball.obj-d03ef1e2d89f104838ecd3c60853b25a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

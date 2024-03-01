@@ -1,0 +1,229 @@
+[gd_scene load_steps=18 format=3 uid="uid://c3632ppq8q3ux"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_7s77e"]
+[ext_resource type="PackedScene" uid="uid://bcwki8jwq0x3g" path="res://scenes/player.tscn" id="1_qsnll"]
+[ext_resource type="Texture2D" uid="uid://8wdrk4tbh7du" path="res://assets/materials/texture_07.png" id="2_hxkpp"]
+[ext_resource type="PackedScene" uid="uid://dwlagieg14003" path="res://scenes/collectible.tscn" id="2_ivhft"]
+[ext_resource type="Script" path="res://scenes/ScoreLabel.gd" id="5_q4lh8"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q37wq"]
+sky_curve = 0.54075
+sky_energy_multiplier = 8.26
+sun_angle_max = 68.3
+
+[sub_resource type="Sky" id="Sky_iajmj"]
+sky_material = SubResource("ProceduralSkyMaterial_q37wq")
+
+[sub_resource type="Environment" id="Environment_8i286"]
+resource_local_to_scene = true
+background_energy_multiplier = 0.9
+sky = SubResource("Sky_iajmj")
+sky_custom_fov = 13.8
+ambient_light_source = 3
+ambient_light_color = Color(0.941176, 0.905882, 0.807843, 1)
+ambient_light_energy = 2.49
+ssao_enabled = true
+ssao_radius = 3.38
+ssao_intensity = 3.39
+ssao_power = 0.630672
+ssao_light_affect = 0.3
+sdfgi_enabled = true
+sdfgi_min_cell_size = 3.38
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 0.65
+adjustment_enabled = true
+adjustment_brightness = 1.05
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0uegj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tepqt"]
+albedo_texture = ExtResource("2_hxkpp")
+uv1_triplanar = true
+uv1_triplanar_sharpness = 1.07177
+
+[sub_resource type="BoxMesh" id="BoxMesh_rfmhg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l6ps6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r6y5f"]
+
+[sub_resource type="Curve3D" id="Curve3D_mv3cn"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -24.8028, 0, -22.9184, 0, 0, 0, 0, 0, 0, 24.013, 0, -23.892, 0, 0, 0, 0, 0, 0, 24.0826, 0, 24.0894, 0, 0, 0, 0, 0, 0, -25.0114, 0, 23.1159, 0, 0, 0, 0, 0, 0, -25.22, 0, 0.0987057, 0, 0, 0, 0, 0, 0, -24.8028, 0, -22.9184),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0)
+}
+point_count = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ktm20"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4njcp"]
+albedo_color = Color(0.34902, 0.121569, 0.611765, 1)
+
+[sub_resource type="Theme" id="Theme_5vkfy"]
+default_font_size = 18
+
+[node name="Main" type="Node"]
+script = ExtResource("1_7s77e")
+collectible = ExtResource("2_ivhft")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8i286")
+
+[node name="Playpen" type="Node3D" parent="."]
+
+[node name="Ground" type="StaticBody3D" parent="Playpen"]
+transform = Transform3D(60, 0, 0, 0, 1, 0, 0, 0, 60, 0, -1, 0)
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Playpen/Ground"]
+shape = SubResource("BoxShape3D_0uegj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Playpen/Ground/CollisionShape3D"]
+material_override = SubResource("StandardMaterial3D_tepqt")
+mesh = SubResource("BoxMesh_rfmhg")
+skeleton = NodePath("../..")
+
+[node name="NorthWall" type="StaticBody3D" parent="Playpen"]
+transform = Transform3D(60, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0.61722, -30)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Playpen/NorthWall"]
+shape = SubResource("BoxShape3D_l6ps6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Playpen/NorthWall/CollisionShape3D"]
+mesh = SubResource("BoxMesh_r6y5f")
+skeleton = NodePath("../..")
+
+[node name="SouthWall" type="StaticBody3D" parent="Playpen"]
+transform = Transform3D(60, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0.61722, 30)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Playpen/SouthWall"]
+shape = SubResource("BoxShape3D_l6ps6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Playpen/SouthWall/CollisionShape3D"]
+mesh = SubResource("BoxMesh_r6y5f")
+skeleton = NodePath("../..")
+
+[node name="EastWall" type="StaticBody3D" parent="Playpen"]
+transform = Transform3D(-2.62268e-06, 0, 1, 0, 3, 0, -60, 0, -4.37114e-08, -30, 0.61722, 0)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Playpen/EastWall"]
+shape = SubResource("BoxShape3D_l6ps6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Playpen/EastWall/CollisionShape3D"]
+mesh = SubResource("BoxMesh_r6y5f")
+skeleton = NodePath("../..")
+
+[node name="WestWall" type="StaticBody3D" parent="Playpen"]
+transform = Transform3D(-2.62268e-06, 0, 1, 0, 3, 0, -60, 0, -4.37114e-08, 30, 0.61722, 0)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Playpen/WestWall"]
+shape = SubResource("BoxShape3D_l6ps6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Playpen/WestWall/CollisionShape3D"]
+mesh = SubResource("BoxMesh_r6y5f")
+skeleton = NodePath("../..")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.357272, -0.809169, -0.466479, 0.285341, -0.570123, 0.770415, -0.889347, 0.142142, 0.434578, 0, 50.3891, 61.6664)
+
+[node name="Player" parent="." instance=ExtResource("1_qsnll")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.25673, 0)
+
+[node name="SpawnPath" type="Path3D" parent="."]
+curve = SubResource("Curve3D_mv3cn")
+
+[node name="Spawners" type="Node3D" parent="SpawnPath"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Spawner#1" type="Node3D" parent="SpawnPath/Spawners"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -23)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SpawnPath/Spawners/Spawner#1"]
+mesh = SubResource("CylinderMesh_ktm20")
+surface_material_override/0 = SubResource("StandardMaterial3D_4njcp")
+
+[node name="Spawner#2" type="Node3D" parent="SpawnPath/Spawners"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 23)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SpawnPath/Spawners/Spawner#2"]
+mesh = SubResource("CylinderMesh_ktm20")
+surface_material_override/0 = SubResource("StandardMaterial3D_4njcp")
+
+[node name="Spawner#3" type="Node3D" parent="SpawnPath/Spawners"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -24)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SpawnPath/Spawners/Spawner#3"]
+mesh = SubResource("CylinderMesh_ktm20")
+surface_material_override/0 = SubResource("StandardMaterial3D_4njcp")
+
+[node name="Spawner#4" type="Node3D" parent="SpawnPath/Spawners"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 16)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SpawnPath/Spawners/Spawner#4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+mesh = SubResource("CylinderMesh_ktm20")
+surface_material_override/0 = SubResource("StandardMaterial3D_4njcp")
+
+[node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
+transform = Transform3D(0.0199404, 0, -0.999801, 0, 1, 0, 0.999801, 0, 0.0199404, -24.8028, 0, -22.9184)
+
+[node name="Mob Timer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_5vkfy")
+
+[node name="ScoreLabel" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 34.0
+offset_right = 102.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Score: 0
+"
+script = ExtResource("5_q4lh8")
+
+[node name="Retry" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1111.0
+offset_bottom = 609.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0745098, 0.0745098, 0.0745098, 0.298039)
+
+[node name="Press Enter for Retry" type="Label" parent="UserInterface/Retry"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -13.0
+offset_right = 20.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Press Enter for Retry"
+
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="timeout" from="Mob Timer" to="." method="_on_mob_timer_timeout"]

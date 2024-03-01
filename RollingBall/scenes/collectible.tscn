@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwlagieg14003"]
+
+[ext_resource type="Script" path="res://scripts/collectible.gd" id="1_vw8pv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6igqp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8e7i2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cym2x"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_thvfp"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" groups=["collectible"]]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_vw8pv")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="Character" type="Node3D" parent="Pivot"]
+
+[node name="Collision Shape" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_6igqp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Collision Shape"]
+mesh = SubResource("BoxMesh_8e7i2")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_cym2x")
+
+[node name="VisibilityNotifier" type="VisibleOnScreenNotifier3D" parent="."]
+aabb = AABB(-0.52055, -0.510345, -0.538869, 1.0411, 1.04901, 1.07774)
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="DodgeContainer" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DodgeContainer"]
+transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 4, 0, 0, 0)
+shape = SubResource("BoxShape3D_thvfp")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_exited" from="DodgeContainer" to="." method="_on_dodge_container_body_exited"]

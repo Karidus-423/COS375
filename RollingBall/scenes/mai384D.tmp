@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3632ppq8q3ux"]
+
+[ext_resource type="PackedScene" uid="uid://bcwki8jwq0x3g" path="res://scenes/player.tscn" id="1_qsnll"]
+
+[sub_resource type="Sky" id="Sky_iajmj"]
+
+[sub_resource type="Environment" id="Environment_8i286"]
+background_mode = 2
+background_energy_multiplier = 0.9
+sky = SubResource("Sky_iajmj")
+sky_custom_fov = 20.5
+ambient_light_source = 3
+ambient_light_color = Color(0.721569, 0, 0, 1)
+ambient_light_energy = 2.49
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0uegj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rfmhg"]
+
+[node name="Main" type="Node"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8i286")
+
+[node name="Player" parent="." instance=ExtResource("1_qsnll")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.02299, -6.31369)
+disable_mode = 2
+floor_stop_on_slope = false
+
+[node name="Playpen" type="Node3D" parent="."]
+
+[node name="Ground" type="StaticBody3D" parent="Playpen"]
+transform = Transform3D(60, 0, 0, 0, 1, 0, 0, 0, 60, 0, 3.47446, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Playpen/Ground"]
+shape = SubResource("BoxShape3D_0uegj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Playpen/Ground/CollisionShape3D"]
+mesh = SubResource("BoxMesh_rfmhg")
+skeleton = NodePath("../..")
