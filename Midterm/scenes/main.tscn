@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dunaxr4drrwyg"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_ban46"]
+[ext_resource type="PackedScene" uid="uid://cyq6br2hn6cqa" path="res://scenes/tree.tscn" id="1_fpbj1"]
+[ext_resource type="PackedScene" uid="uid://cw320nctnlvwt" path="res://scenes/balloon.tscn" id="2_q2eim"]
+
+[node name="main" type="Node3D"]
+script = ExtResource("1_ban46")
+
+[node name="Tree" parent="." instance=ExtResource("1_fpbj1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="bloon" parent="." instance=ExtResource("2_q2eim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.31881, 1.09029, 1.42798)
+fov = 110.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.196469, -0.468994, 0.861072, 0.104328, 0.883201, 0.457243, -0.974944, 0, 0.22245, 8.86001, 5.20142, 0.202142)

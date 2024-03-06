@@ -38,6 +38,7 @@ func _on_apple_timer_timeout():
 
 	# Spawn the apple by adding it to the Main scene.
 	add_child(apple_instance)
+	apple.collect.connect($UI/ScoreLabel._on_apple_collected.bind())
 
 
 func _on_start_timer_timeout():
@@ -46,4 +47,5 @@ func _on_start_timer_timeout():
 
 
 func _on_lives_label_death():
+	game_over()
 	pass # Replace with function body.

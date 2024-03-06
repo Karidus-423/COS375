@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1709762902
+icon.svg::CompressedTexture2D::8886590996569242272::1709760293::1709760297::1::::<><>::
+::res://assets/::1709761372
+leaves.obj::Mesh::1739133896422530232::1709761362::1709761372::1::::<><>::
+::res://scenes/::1709762764
+balloon.tscn::PackedScene::6376483194963168731::1709762764::0::1::::<><>::res://scripts/balloon.gd
+main.tscn::PackedScene::8589917845758539462::1709762764::0::1::::<><>::res://scripts/main.gd<>uid://cyq6br2hn6cqa::::res://scenes/tree.tscn<>uid://cw320nctnlvwt::::res://scenes/balloon.tscn
+tree.tscn::PackedScene::6492288606276914320::1709762764::0::1::::<><>::uid://y1pjtbvsw75m::::res://assets/leaves.obj
+::res://scripts/::1709762867
+balloon.gd::GDScript::-1::1709762867::0::1::::<>StaticBody3D<>::
+main.gd::GDScript::-1::1709762780::0::1::::<>Node3D<>::

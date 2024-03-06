@@ -1,10 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://4ij7ed8u4eue"]
+[gd_scene load_steps=15 format=3 uid="uid://4ij7ed8u4eue"]
 
 [ext_resource type="PackedScene" uid="uid://dcl1o6bmpllmt" path="res://Scenes/player.tscn" id="1_c2odg"]
 [ext_resource type="Texture2D" uid="uid://c1r332lbigigv" path="res://assets/Forrest/Assets/Tiles.png" id="1_e3hm7"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_ic6vk"]
 [ext_resource type="Texture2D" uid="uid://csqhju4o4r40m" path="res://assets/Forrest/Background/Background.png" id="1_t56nd"]
-[ext_resource type="PackedScene" uid="uid://dx75iexrlc5h2" path="res://Scenes/apple.tscn" id="2_tqcmc"]
 [ext_resource type="Texture2D" uid="uid://d0enc2dpylvhi" path="res://assets/light/2d_lights_and_shadows_neutral_point_light.webp" id="4_7lim7"]
 [ext_resource type="Script" path="res://scripts/LivesLabel.gd" id="7_px3hf"]
 [ext_resource type="Script" path="res://scripts/ScoreLabel.gd" id="8_kkaie"]
@@ -2936,7 +2935,6 @@ point_count = 5
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ic6vk")
-apple = ExtResource("2_tqcmc")
 metadata/_edit_lock_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
