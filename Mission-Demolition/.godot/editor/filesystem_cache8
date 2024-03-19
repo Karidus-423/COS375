@@ -1,0 +1,7 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1710891756
+icon.svg::CompressedTexture2D::8514169683933746780::1710891678::1710891690::1::::<><>::
+slingshot.gd::GDScript::-1::1710891756::0::1::::<>CharacterBody2D<>::
+::res://scenes/::1710891706
+character_body_2d.tscn::PackedScene::6309856251400147107::1710891782::0::1::::<><>::res://slingshot.gd
+::res://scripts/::1710891727
