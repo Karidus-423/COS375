@@ -1,0 +1,42 @@
+* Mission Demolition
+**  List
+    - ( ) Player
+    - ( ) Enemy
+    - ( ) Stage
+    - ( ) Menu
+
+** Player - Boar with Cannon
+   - Shoots balls.
+   --- Interacts with Stage and Enemy.
+
+   - Balls are finite.
+   --- Once balls reach 0 lose state.
+
+** Enemy - Pirates
+   - They are finite pirates.
+   --- Once all pirates die win state.
+
+   - Randomly spawned on the stage.
+
+** Stage - Ship
+   - Has a floor in which randomly generated
+     pieces will spawn.
+
+   - They'll be 10 stages.
+   --- Once win signal is collected change stage.
+       
+   - If there is a win from every stage game completed.
+
+** Menu - Level and UI
+   - Start game go to menu.
+   - Options are New Game, Level Select, and Quit.
+
+   - New game deletes all progress and starts at level 1.
+
+   - Level Select makes it so that the chosen level resets
+     but if it was completed before no rewards.
+
+   - Quit exits game.
+
+
+

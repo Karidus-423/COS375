@@ -1,1 +1,8 @@
+RigidBody2D
+AnimatedSprite2D
+Sprite2D
+TileMap
+WorldEnvironment
+CollisionShape2D
+MeshInstance2D
 CharacterBody2D
