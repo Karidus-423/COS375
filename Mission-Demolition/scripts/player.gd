@@ -15,9 +15,10 @@ func _process(delta):
     if(mouse_down):
         has_started = true
         if(position.distance_to(get_global_mouse_position()) < 100):
-            $Player.global_position = get_global_mouse_position()
+            $test_cannon.global_position = get_global_mouse_position()
         else:
-            $Player.global_position = bomb_pos + (get_global_mouse_position()-position).normalized()*100
+            $test_cannon.global_position = bomb_pos + (get_global_mouse_position()-position).normalized()*100
+            
     elif(has_started):
         _shoot()
         has_started = false
