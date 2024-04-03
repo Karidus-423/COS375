@@ -1,6 +1,7 @@
-[gd_scene load_steps=22 format=3 uid="uid://bjmvptfnxgksr"]
+[gd_scene load_steps=23 format=3 uid="uid://bjmvptfnxgksr"]
 
 [ext_resource type="Texture2D" uid="uid://dp13a44s8a0wq" path="res://assets/Sprites/7-Objects/1-BOMB/3-Explotion/1.png" id="1_cem48"]
+[ext_resource type="Script" path="res://scripts/cannon.gd" id="1_djrlj"]
 [ext_resource type="Texture2D" uid="uid://brkynbabw5i5m" path="res://assets/Sprites/7-Objects/1-BOMB/3-Explotion/2.png" id="2_j1qxi"]
 [ext_resource type="Texture2D" uid="uid://ce6hn8flytbi8" path="res://assets/Sprites/7-Objects/1-BOMB/3-Explotion/3.png" id="3_gixbv"]
 [ext_resource type="Texture2D" uid="uid://oljcoq61iodt" path="res://assets/Sprites/7-Objects/1-BOMB/3-Explotion/4.png" id="4_md0vb"]
@@ -100,11 +101,13 @@ animations = [{
 }]
 
 [node name="Cannon" type="Node2D"]
+script = ExtResource("1_djrlj")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D"]
 texture_filter = 1
+position = Vector2(-1, -18)
 sprite_frames = SubResource("SpriteFrames_pkucv")
 animation = &"idle"
-frame_progress = 0.159471
+frame_progress = 0.492373

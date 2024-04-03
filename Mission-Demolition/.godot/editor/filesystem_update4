@@ -1,5 +1,6 @@
-res://scripts/player.gd
+res://scenes/main.tscn
 res://scenes/player.tscn
 res://scenes/tile_map.tscn
 res://scenes/cannon.tscn
-res://scenes/main.tscn
+res://scripts/player.gd
+res://scripts/cannon.gd

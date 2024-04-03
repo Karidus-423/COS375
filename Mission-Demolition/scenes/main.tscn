@@ -6,9 +6,9 @@
 [node name="Main" type="Node2D"]
 
 [node name="TileMap" parent="." instance=ExtResource("1_y6a47")]
-position = Vector2(23, 124)
+position = Vector2(27, 116)
 scale = Vector2(0.8, 0.8)
 
 [node name="Player" parent="." instance=ExtResource("2_qdsm3")]
-position = Vector2(117, 147)
-scale = Vector2(0.352272, 0.493045)
+position = Vector2(78, 139)
+scale = Vector2(0.334705, 0.384603)

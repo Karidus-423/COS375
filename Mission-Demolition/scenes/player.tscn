@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bn2lm2b26a5qa"]
+[gd_scene load_steps=41 format=3 uid="uid://bn2lm2b26a5qa"]
 
 [ext_resource type="Texture2D" uid="uid://co38743u67ddg" path="res://assets/Sprites/1-Player-Bomb Guy/1-Idle/1.png" id="1_gf6cv"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_uyrwh"]
@@ -37,6 +37,9 @@
 [ext_resource type="Texture2D" uid="uid://b6nxvw3xst6jd" path="res://assets/Sprites/16-Enemy-Cannon/2-Attack/8.png" id="34_xr08c"]
 [ext_resource type="Texture2D" uid="uid://vfxyadaky16e" path="res://assets/Sprites/16-Enemy-Cannon/2-Attack/9.png" id="35_d45bj"]
 [ext_resource type="Texture2D" uid="uid://bqj7dd3gh2xkf" path="res://assets/Sprites/16-Enemy-Cannon/1-Idle/1.png" id="36_886dv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8q6wy"]
+size = Vector2(139, 145.185)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x38xm"]
 animations = [{
@@ -175,8 +178,15 @@ animations = [{
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_uyrwh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-32, -6)
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(6, 26)
+scale = Vector2(1, 1.08)
+priority = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(30, -24.0741)
+scale = Vector2(1.16063, 0.988663)
+shape = SubResource("RectangleShape2D_8q6wy")
 
 [node name="avatar" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
