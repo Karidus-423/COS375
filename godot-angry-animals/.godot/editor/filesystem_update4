@@ -1,0 +1,8 @@
+res://main/main.tscn
+res://animal/animal.tscn
+res://blocks/block.tscn
+res://enemy/enemy.tscn
+res://launch_area/launch_area.tscn
+res://level/level_1.tscn
+res://cup/cup.tscn
+res://level/level.tscn

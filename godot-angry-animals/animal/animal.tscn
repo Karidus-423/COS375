@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://d10s42pv2jr8t"]
+
+[ext_resource type="Script" path="res://animal/animal.gd" id="1_skyme"]
+[ext_resource type="Texture2D" uid="uid://cwjjqtc7hgaua" path="res://assets/player/1-BOMB/1-Bomb Off/1.png" id="2_flbqp"]
+[ext_resource type="AudioStream" uid="uid://co68r8508jkit" path="res://assets/audio/stretch2.ogg" id="3_7siyf"]
+[ext_resource type="AudioStream" uid="uid://dy48tr0284g8o" path="res://assets/audio/catapult.ogg" id="4_gx7hj"]
+[ext_resource type="AudioStream" uid="uid://b6kg3oithc803" path="res://assets/audio/kick_wood.ogg" id="5_oxupj"]
+[ext_resource type="Texture2D" uid="uid://bjb1kt1qlwkmm" path="res://assets/items/1-Charging Bar/1.png" id="6_tg02s"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_qj56g"]
+bounce = 0.2
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_laf01"]
+radius = 19.0263
+
+[node name="Animal" type="RigidBody2D" groups=["animal"]]
+collision_layer = 5
+input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_qj56g")
+freeze = true
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_skyme")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1, -24)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_flbqp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_laf01")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-4.76837e-07, 4.76837e-07)
+scale = Vector2(1.9, 1.9)
+
+[node name="StretchSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_7siyf")
+
+[node name="LaunchSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_gx7hj")
+
+[node name="CollisionSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_oxupj")
+
+[node name="ArrowSprite" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("6_tg02s")
+offset = Vector2(60, 0)
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 15.0
+
+[connection signal="hit" from="." to="." method="_on_hit"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
