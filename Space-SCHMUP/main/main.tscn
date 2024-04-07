@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://dupg3otdvlo1w"]
+
+[ext_resource type="PackedScene" uid="uid://crk0rsrysnq4l" path="res://background/game_background.tscn" id="1_joqjl"]
+[ext_resource type="PackedScene" uid="uid://dfqopa8c1hscn" path="res://player/player.tscn" id="2_6ktxl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nwii6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4pjx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hmjo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o67bt"]
+
+[node name="Main" type="Node2D"]
+texture_filter = 1
+
+[node name="GameBackground" parent="." instance=ExtResource("1_joqjl")]
+
+[node name="Player" parent="." instance=ExtResource("2_6ktxl")]
+position = Vector2(317, 1106)
+
+[node name="GameWall" type="StaticBody2D" parent="."]
+
+[node name="NorthWall" type="CollisionShape2D" parent="GameWall"]
+position = Vector2(322, -9)
+rotation = 3.14159
+scale = Vector2(35, 1)
+shape = SubResource("RectangleShape2D_nwii6")
+one_way_collision = true
+
+[node name="SouthWall" type="CollisionShape2D" parent="GameWall"]
+position = Vector2(320, 1208)
+scale = Vector2(35, 1)
+shape = SubResource("RectangleShape2D_f4pjx")
+one_way_collision = true
+
+[node name="WestWall" type="CollisionShape2D" parent="GameWall"]
+position = Vector2(-11, 601)
+rotation = 1.5708
+scale = Vector2(60, 1)
+shape = SubResource("RectangleShape2D_5hmjo")
+one_way_collision = true
+
+[node name="EastWall" type="CollisionShape2D" parent="GameWall"]
+position = Vector2(652, 597)
+rotation = -1.5708
+scale = Vector2(60, 1)
+shape = SubResource("RectangleShape2D_o67bt")
+one_way_collision = true

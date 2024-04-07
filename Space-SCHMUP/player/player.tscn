@@ -1,0 +1,70 @@
+[gd_scene load_steps=12 format=3 uid="uid://dfqopa8c1hscn"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_klnul"]
+[ext_resource type="Texture2D" uid="uid://dp32ke4k02uei" path="res://assets/art/SHMUP_free/player_1.png" id="2_q646l"]
+[ext_resource type="Texture2D" uid="uid://di0gngkg4jj1t" path="res://assets/art/SHMUP_free/player_2.png" id="3_q0v1e"]
+[ext_resource type="Texture2D" uid="uid://d2vsu00xc0dn2" path="res://assets/art/SHMUP_free/player_3.png" id="4_ow3lh"]
+[ext_resource type="Texture2D" uid="uid://do3e53v3y0tp5" path="res://assets/art/SHMUP_free/player_left-1.png" id="5_ifdrn"]
+[ext_resource type="Texture2D" uid="uid://eri7iav2rsl6" path="res://assets/art/SHMUP_free/player_left-2.png" id="6_ajevq"]
+[ext_resource type="Texture2D" uid="uid://cslp1wd8m5v66" path="res://assets/art/SHMUP_free/player_left-3.png" id="7_uj5ny"]
+[ext_resource type="Texture2D" uid="uid://khclvaefdggs" path="res://assets/art/SHMUP_free/player_right-1.png" id="8_mva0w"]
+[ext_resource type="Texture2D" uid="uid://f3mc18pfukcs" path="res://assets/art/SHMUP_free/player_right-2.png" id="9_s4qxu"]
+[ext_resource type="Texture2D" uid="uid://c8mumdc0fr8gs" path="res://assets/art/SHMUP_free/player_right-3.png" id="10_2umt8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s8df4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_q646l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_q0v1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ow3lh")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ifdrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ajevq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uj5ny")
+}],
+"loop": true,
+"name": &"move_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_mva0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_s4qxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_2umt8")
+}],
+"loop": true,
+"name": &"move_right",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_klnul")
+acceleration = 8000.0
+friction = 500.0
+
+[node name="PlayerAnimation" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_s8df4")
+animation = &"idle"
+frame_progress = 0.495075
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-1, -25, -3, -20, -3, -12, -6, -7, -7, -4, -20, 9, -21, 13, -13, 10, -9, 8, -9, 16, 9, 16, 9, 8, 12, 10, 17, 11, 20, 12, 20, 9, 7, -4, 6, -7, 3, -12, 3, -20, 1, -25)

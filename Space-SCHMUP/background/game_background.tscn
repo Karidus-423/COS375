@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://crk0rsrysnq4l"]
+
+[ext_resource type="Texture2D" uid="uid://b4hlct7yllx5u" path="res://assets/art/SHMUP_free/Space Background/background.png" id="1_3itof"]
+[ext_resource type="Texture2D" uid="uid://dvipqbjfp6phe" path="res://assets/art/SHMUP_free/Space Background/nebula_1.png" id="2_j6jtt"]
+[ext_resource type="Texture2D" uid="uid://b3oh6i4yybmlf" path="res://assets/art/SHMUP_free/Space Background/stars_2.png" id="3_u81bs"]
+[ext_resource type="Texture2D" uid="uid://526snm1tltwx" path="res://assets/art/SHMUP_free/Space Background/nebula_2.png" id="4_fd0gm"]
+[ext_resource type="Script" path="res://main/Stars1.gd" id="5_7bnnd"]
+[ext_resource type="Texture2D" uid="uid://dwvdbwbsnv1dw" path="res://assets/art/SHMUP_free/Space Background/stars_1.png" id="6_bf2vl"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+follow_viewport_enabled = true
+
+[node name="Space" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.1, 0.1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Space"]
+position = Vector2(321, 599.5)
+scale = Vector2(2.37037, 2.49375)
+texture = ExtResource("1_3itof")
+
+[node name="Nebula1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Nebula1"]
+position = Vector2(127, 129)
+texture = ExtResource("2_j6jtt")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Nebula1"]
+position = Vector2(499, 590)
+scale = Vector2(0.723736, 0.807053)
+texture = ExtResource("2_j6jtt")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Nebula1"]
+position = Vector2(126, 1071)
+scale = Vector2(1.10147, 1.30983)
+texture = ExtResource("2_j6jtt")
+
+[node name="Stars2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 0.3)
+
+[node name="Sprite2D" type="Sprite2D" parent="Stars2"]
+position = Vector2(322, 598)
+scale = Vector2(2.37778, 2.49167)
+texture = ExtResource("3_u81bs")
+
+[node name="Nebula2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="Nebula2"]
+position = Vector2(405, 347)
+texture = ExtResource("4_fd0gm")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Nebula2"]
+position = Vector2(304, 829)
+rotation = -2.24545
+scale = Vector2(1.70596, 1.26257)
+texture = ExtResource("4_fd0gm")
+
+[node name="Stars1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(0, 1200)
+script = ExtResource("5_7bnnd")
+
+[node name="Sprite2D" type="Sprite2D" parent="Stars1"]
+position = Vector2(321, 599)
+scale = Vector2(2.37037, 2.49583)
+texture = ExtResource("6_bf2vl")

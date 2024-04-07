@@ -1,0 +1,8 @@
+CollisionShape2D
+StaticBody2D
+ParallaxBackground
+Sprite2D
+ParallaxLayer
+CollisionPolygon2D
+AnimatedSprite2D
+CharacterBody2D
