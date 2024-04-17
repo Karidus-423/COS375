@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dupg3otdvlo1w"]
+[gd_scene load_steps=9 format=3 uid="uid://dupg3otdvlo1w"]
 
 [ext_resource type="Script" path="res://main/main.gd" id="1_0be4j"]
 [ext_resource type="PackedScene" uid="uid://crk0rsrysnq4l" path="res://background/game_background.tscn" id="1_joqjl"]
 [ext_resource type="PackedScene" uid="uid://dfqopa8c1hscn" path="res://player/player.tscn" id="2_6ktxl"]
-[ext_resource type="PackedScene" uid="uid://br4bjfh50ma3c" path="res://enemies/enemy_scout/scout.tscn" id="2_agq7i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nwii6"]
 
@@ -22,7 +21,6 @@ point_count = 12
 [node name="Main" type="Node2D"]
 texture_filter = 1
 script = ExtResource("1_0be4j")
-mob_scene = ExtResource("2_agq7i")
 
 [node name="GameBackground" parent="." instance=ExtResource("1_joqjl")]
 
@@ -59,6 +57,8 @@ shape = SubResource("RectangleShape2D_o67bt")
 one_way_collision = true
 
 [node name="SpawnPath" type="Path2D" parent="."]
+position = Vector2(34, 26)
+scale = Vector2(0.884127, 0.827586)
 curve = SubResource("Curve2D_qsbpg")
 
 [node name="SpawnLocation" type="PathFollow2D" parent="SpawnPath"]

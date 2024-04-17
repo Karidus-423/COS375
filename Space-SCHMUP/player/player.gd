@@ -12,6 +12,7 @@ var input = Vector2.ZERO
 func _physics_process(delta):
 	player_movement(delta)
 	player_animation()
+	player_shooting()
 
 
 ### Player Input
@@ -40,6 +41,14 @@ func player_movement(delta):
 
 	move_and_slide()
 
+func player_shooting():
+	var shoot = Input.is_action_just_pressed("ui_accept")
+	var projectileType = load("res://player/player_bullet/player_bullet.tscn")
+	if shoot == true:
+		var projectile = projectileType.instantiate()
+		projectile.position = position + Vector2(0,-50)
+		projectile.add_constant_central_force(Vector2(0,-5000))
+		get_parent().add_child(projectile)
 
 func player_animation() -> void:
 	if Input.is_action_pressed("ui_right") == true:

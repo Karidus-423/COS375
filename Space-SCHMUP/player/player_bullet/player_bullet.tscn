@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxav8m5a6udqw"]
+
+[ext_resource type="Script" path="res://player/player_bullet/PlayerBullet.gd" id="1_kcrqg"]
+[ext_resource type="Texture2D" uid="uid://cm2e7cti5jeye" path="res://assets/art/SHMUP_free/projectile_1.png" id="2_2qf5u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_faw6i"]
+
+[node name="PlayerBullet" type="RigidBody2D"]
+collision_layer = 10
+collision_mask = 10
+script = ExtResource("1_kcrqg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_2qf5u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.666308, 1.15559)
+shape = SubResource("CapsuleShape2D_faw6i")

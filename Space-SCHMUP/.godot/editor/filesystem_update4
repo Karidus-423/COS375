@@ -5,3 +5,5 @@ res://enemies/enemy_scout/enemy_variation_1.tscn
 res://enemies/enemy_scout/scout.tscn
 res://main/main.gd
 res://enemies/enemy_scout/scout.gd
+res://player/player_bullet/PlayerBullet.gd
+res://player/player_bullet/player_bullet.tscn

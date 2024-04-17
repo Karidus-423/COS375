@@ -69,6 +69,8 @@ animations = [{
 }]
 
 [node name="Scout" type="CharacterBody2D"]
+collision_layer = 6
+collision_mask = 4
 script = ExtResource("1_ww60s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -76,7 +78,7 @@ position = Vector2(0, -14)
 rotation = -3.14159
 sprite_frames = SubResource("SpriteFrames_uksjx")
 animation = &"idle"
-frame_progress = 0.646273
+frame_progress = 0.337054
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = -3.14159

@@ -1,3 +1,6 @@
+res://player/player_bullet
+res://assets/art/SHMUP_free
+res://assets/art/SHMUP_free/Explosion
 res://enemies/enemy_scout
 res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/PNGs
 res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/PNGs
@@ -6,4 +9,3 @@ res://assets/art
 res://background
 res://main
 res://assets/art/SHMUP_free/Space Background
-res://assets/art/SHMUP_free
