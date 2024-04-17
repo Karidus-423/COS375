@@ -1,7 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713373297
+::res://::1713384995
 icon.svg::CompressedTexture2D::7579453274284684184::1712176594::1712176598::1::::<><>::
-::res://assets/::1712693942
+README.md::TextFile::-1::1713383729::0::1::::<><>::
+::res://assets/::1713384856
 ::res://assets/art/::1712843758
 shield_4.png::CompressedTexture2D::3948810469776792433::1712843756::1712843758::1::::<><>::
 ::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/::1712693981
@@ -112,6 +113,8 @@ health_bar.png::CompressedTexture2D::8622873231187712416::1680054512::1712177359
 icon-health.png::CompressedTexture2D::8044963089514333865::1680054338::1712177359::1::::<><>::
 icon-powerup.png::CompressedTexture2D::877906809717310481::1680054338::1712177359::1::::<><>::
 icon-ship.png::CompressedTexture2D::7011468068050454593::1680054564::1712177359::1::::<><>::
+::res://assets/markdown_assets/::1713384874
+menu.png::CompressedTexture2D::198401429783631212::1713384782::1713385028::1::::<><>::
 ::res://assets/sfx/::1712177170
 ::res://assets/sfx/1/::1712177162
 Blip_Select2.wav::AudioStreamWAV::2533250912253326990::1397365498::1712177162::1::::<><>::
@@ -457,18 +460,22 @@ Randomize.wav::AudioStreamWAV::1522427845755703813::1397959208::1712177162::1:::
 ::res://background/::1712190078
 game_background.tscn::PackedScene::5988244742885907565::1712190078::0::1::::<><>::uid://b4hlct7yllx5u::::res://assets/art/SHMUP_free/Space Background/background.png<>uid://dvipqbjfp6phe::::res://assets/art/SHMUP_free/Space Background/nebula_1.png<>uid://b3oh6i4yybmlf::::res://assets/art/SHMUP_free/Space Background/stars_2.png<>uid://526snm1tltwx::::res://assets/art/SHMUP_free/Space Background/nebula_2.png<>res://main/Stars1.gd<>uid://dwvdbwbsnv1dw::::res://assets/art/SHMUP_free/Space Background/stars_1.png
 ::res://enemies/::1713304265
-::res://enemies/enemy_scout/::1713373278
+::res://enemies/enemy_scout/::1713380364
 scout.gd::GDScript::-1::1713372506::0::1::::<>CharacterBody2D<>::
-scout.tscn::PackedScene::3639575044372620970::1713373278::0::1::::<><>::uid://cpc3gdss3gnt7::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/PNGs/Nautolan Ship - Scout - Base.png<>uid://1xtddebujipt::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/PNGs/Nautolan Ship - Scout - Engine Effect.png<>res://enemies/enemy_scout/scout.gd<>uid://0dbjqotq4byw::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Destruction/PNGs/Nautolan Ship - Scout.png
-::res://enemies/enemy_scout/scout_projectile/::1713373278
-scout_bullet.tscn::PackedScene::5727806802870488111::1713373278::0::1::::<><>::uid://i7ac8xprcrsg::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapon Effects - Projectiles/PNGs/Nautolan - Bullet.png
-::res://main/::1713373277
-main.gd::GDScript::-1::1713325107::0::1::::<>Node2D<>::
-main.tscn::PackedScene::8594419659179788042::1713373277::0::1::::<><>::res://main/main.gd<>uid://crk0rsrysnq4l::::res://background/game_background.tscn<>uid://dfqopa8c1hscn::::res://player/player.tscn
+scout.tscn::PackedScene::3639575044372620970::1713380364::0::1::::<><>::uid://cpc3gdss3gnt7::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/PNGs/Nautolan Ship - Scout - Base.png<>uid://1xtddebujipt::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/PNGs/Nautolan Ship - Scout - Engine Effect.png<>res://enemies/enemy_scout/scout.gd<>uid://0dbjqotq4byw::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Destruction/PNGs/Nautolan Ship - Scout.png
+::res://enemies/enemy_scout/scout_projectile/::1713380365
+scout_bullet.tscn::PackedScene::5727806802870488111::1713380365::0::1::::<><>::uid://i7ac8xprcrsg::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapon Effects - Projectiles/PNGs/Nautolan - Bullet.png
+::res://main/::1713384773
+main.gd::GDScript::-1::1713381531::0::1::::<>Node2D<>::
+main.tscn::PackedScene::8594419659179788042::1713384773::0::1::::<><>::res://main/main.gd<>uid://crk0rsrysnq4l::::res://background/game_background.tscn<>uid://dfqopa8c1hscn::::res://player/player.tscn
 Stars1.gd::GDScript::-1::1712189374::0::1::::<>ParallaxLayer<>::
-::res://player/::1713373278
-player.gd::GDScript::-1::1713369275::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7544113189246182769::1713373278::0::1::::<><>::res://player/player.gd<>uid://dp32ke4k02uei::::res://assets/art/SHMUP_free/player_1.png<>uid://di0gngkg4jj1t::::res://assets/art/SHMUP_free/player_2.png<>uid://d2vsu00xc0dn2::::res://assets/art/SHMUP_free/player_3.png<>uid://do3e53v3y0tp5::::res://assets/art/SHMUP_free/player_left-1.png<>uid://eri7iav2rsl6::::res://assets/art/SHMUP_free/player_left-2.png<>uid://cslp1wd8m5v66::::res://assets/art/SHMUP_free/player_left-3.png<>uid://khclvaefdggs::::res://assets/art/SHMUP_free/player_right-1.png<>uid://f3mc18pfukcs::::res://assets/art/SHMUP_free/player_right-2.png<>uid://c8mumdc0fr8gs::::res://assets/art/SHMUP_free/player_right-3.png<>uid://bwi3ljhveuyrp::::res://assets/art/shield_4.png
-::res://player/player_bullet/::1713373278
+::res://main/menu/::1713384773
+GohuFontuni11NerdFontMono-Regular.ttf::FontFile::3669697415963565611::1::1713384221::1::::<><>::
+menu.gd::GDScript::-1::1713383707::0::1::::<>Control<>::
+menu.tscn::PackedScene::4026167419311544223::1713384773::0::1::::<><>::res://main/menu/menu.gd<>uid://b4hlct7yllx5u::::res://assets/art/SHMUP_free/Space Background/background.png<>uid://0lbbkox1qspi::::res://assets/art/SHMUP_free/Explosion/explosion-2.png
+::res://player/::1713380364
+player.gd::GDScript::-1::1713379385::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7544113189246182769::1713380364::0::1::::<><>::res://player/player.gd<>uid://dp32ke4k02uei::::res://assets/art/SHMUP_free/player_1.png<>uid://di0gngkg4jj1t::::res://assets/art/SHMUP_free/player_2.png<>uid://d2vsu00xc0dn2::::res://assets/art/SHMUP_free/player_3.png<>uid://do3e53v3y0tp5::::res://assets/art/SHMUP_free/player_left-1.png<>uid://eri7iav2rsl6::::res://assets/art/SHMUP_free/player_left-2.png<>uid://cslp1wd8m5v66::::res://assets/art/SHMUP_free/player_left-3.png<>uid://khclvaefdggs::::res://assets/art/SHMUP_free/player_right-1.png<>uid://f3mc18pfukcs::::res://assets/art/SHMUP_free/player_right-2.png<>uid://c8mumdc0fr8gs::::res://assets/art/SHMUP_free/player_right-3.png<>uid://bwi3ljhveuyrp::::res://assets/art/shield_4.png
+::res://player/player_bullet/::1713380365
 PlayerBullet.gd::GDScript::-1::1713356711::0::1::::<>RigidBody2D<>::
-player_bullet.tscn::PackedScene::4002098752081353938::1713373278::0::1::::<><>::res://player/player_bullet/PlayerBullet.gd<>uid://cm2e7cti5jeye::::res://assets/art/SHMUP_free/projectile_1.png
+player_bullet.tscn::PackedScene::4002098752081353938::1713380365::0::1::::<><>::res://player/player_bullet/PlayerBullet.gd<>uid://cm2e7cti5jeye::::res://assets/art/SHMUP_free/projectile_1.png

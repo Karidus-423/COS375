@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 window/size/viewport_width=640
 window/size/viewport_height=1200
 
+[gui]
+
+theme/custom_font="res://main/menu/GohuFontuni11NerdFontMono-Regular.ttf"
+
 [input]
 
 ui_left={

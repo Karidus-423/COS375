@@ -15,7 +15,6 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_2m6x1")
-metadata/_edit_use_anchors_ = true
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
 layout_mode = 1
@@ -31,6 +30,12 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 size_flags_stretch_ratio = 20.0
 texture = ExtResource("2_1kkyf")
+
+[node name="Title" type="RichTextLabel" parent="AspectRatioContainer"]
+layout_mode = 2
+text = "SPACE SHMUP
+
+Press Space/Enter to start"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="AspectRatioContainer"]
 layout_mode = 2
