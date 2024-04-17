@@ -1,4 +1,6 @@
+TextureRect
 HBoxContainer
+AspectRatioContainer
 Button
 VBoxContainer
 MarginContainer
@@ -11,5 +13,3 @@ RigidBody2D
 Timer
 CollisionShape2D
 Area2D
-VisibleOnScreenNotifier2D
-PathFollow2D
