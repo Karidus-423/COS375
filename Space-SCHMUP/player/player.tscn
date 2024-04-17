@@ -99,7 +99,8 @@ _data = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0td2i"]
 
 [node name="Player" type="CharacterBody2D"]
-collision_mask = 25
+collision_layer = 0
+collision_mask = 32
 script = ExtResource("1_klnul")
 acceleration = 8000.0
 friction = 500.0
@@ -112,6 +113,13 @@ frame_progress = 0.495075
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-1, -25, -3, -20, -3, -12, -6, -7, -7, -4, -20, 9, -21, 13, -13, 10, -9, 8, -9, 16, 9, 16, 9, 8, 12, 10, 17, 11, 20, 12, 20, 9, 7, -4, 6, -7, 3, -12, 3, -20, 1, -25)
 
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 26
+
+[node name="HurtBox" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-1, -25, -3, -20, -3, -12, -6, -7, -7, -4, -20, 9, -21, 13, -13, 10, -9, 8, -9, 16, 9, 16, 9, 8, 12, 10, 17, 11, 20, 12, 20, 9, 7, -4, 6, -7, 3, -12, 3, -20, 1, -25)
+
 [node name="ShieldAnimations" type="Sprite2D" parent="."]
 texture = ExtResource("11_yra1f")
 offset = Vector2(0, -40)
@@ -121,3 +129,5 @@ libraries = {
 "": SubResource("AnimationLibrary_4jqjb"),
 "shields": SubResource("AnimationLibrary_0td2i")
 }
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

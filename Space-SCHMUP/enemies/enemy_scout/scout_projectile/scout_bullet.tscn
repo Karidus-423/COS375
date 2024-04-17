@@ -1,0 +1,88 @@
+[gd_scene load_steps=12 format=3 uid="uid://cnuue2hy7k03d"]
+
+[ext_resource type="Texture2D" uid="uid://i7ac8xprcrsg" path="res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapon Effects - Projectiles/PNGs/Nautolan - Bullet.png" id="1_y6t52"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v6uty"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pffft"]
+atlas = ExtResource("1_y6t52")
+region = Rect2(0, 0, 9, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ml6t"]
+atlas = ExtResource("1_y6t52")
+region = Rect2(9, 0, 9, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_br51w"]
+atlas = ExtResource("1_y6t52")
+region = Rect2(18, 0, 9, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ced2"]
+atlas = ExtResource("1_y6t52")
+region = Rect2(27, 0, 9, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulfo0"]
+atlas = ExtResource("1_y6t52")
+region = Rect2(36, 0, 9, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omh52"]
+atlas = ExtResource("1_y6t52")
+region = Rect2(45, 0, 9, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyggx"]
+atlas = ExtResource("1_y6t52")
+region = Rect2(54, 0, 9, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otjxe"]
+atlas = ExtResource("1_y6t52")
+region = Rect2(63, 0, 9, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yeusu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pffft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ml6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_br51w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ced2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulfo0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omh52")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qyggx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otjxe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="scoutBullet" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -3.14159
+scale = Vector2(0.448827, 0.277144)
+shape = SubResource("CapsuleShape2D_v6uty")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 3.14159
+sprite_frames = SubResource("SpriteFrames_yeusu")
+frame_progress = 0.186704
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, -5)
+rotation = -3.14159
+scale = Vector2(0.221612, 0.153529)

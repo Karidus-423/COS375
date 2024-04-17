@@ -21,3 +21,7 @@ func _on_enemy_timer_timeout() -> void:
 	# Choose the velocity for the scout.
 	scout.velocity = Vector2(0,speed)
 	add_child(scout)
+
+
+func _on_player_damaged() -> void:
+	get_tree().change_scene_to_file("res://main/menu/menu.tscn")

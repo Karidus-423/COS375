@@ -1,9 +1,11 @@
-res://player/player.gd
-res://player/player.tscn
+res://enemies/enemy_scout/scout_projectile/scout_bullet.tscn
 res://main/main.tscn
-res://enemies/enemy_scout/enemy_variation_1.tscn
+res://player/player.tscn
 res://enemies/enemy_scout/scout.tscn
+res://player/player_bullet/player_bullet.tscn
 res://main/main.gd
+res://main/menu/menu.tscn
+res://main/menu/menu.gd
+res://player/player.gd
 res://enemies/enemy_scout/scout.gd
 res://player/player_bullet/PlayerBullet.gd
-res://player/player_bullet/player_bullet.tscn

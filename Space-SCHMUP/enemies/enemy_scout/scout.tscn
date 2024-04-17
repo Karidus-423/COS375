@@ -1,8 +1,45 @@
-[gd_scene load_steps=13 format=3 uid="uid://br4bjfh50ma3c"]
+[gd_scene load_steps=24 format=3 uid="uid://br4bjfh50ma3c"]
 
 [ext_resource type="Texture2D" uid="uid://cpc3gdss3gnt7" path="res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/PNGs/Nautolan Ship - Scout - Base.png" id="1_5ql6k"]
 [ext_resource type="Texture2D" uid="uid://1xtddebujipt" path="res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/PNGs/Nautolan Ship - Scout - Engine Effect.png" id="1_57olm"]
 [ext_resource type="Script" path="res://enemies/enemy_scout/scout.gd" id="1_ww60s"]
+[ext_resource type="Texture2D" uid="uid://0dbjqotq4byw" path="res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Destruction/PNGs/Nautolan Ship - Scout.png" id="2_q3hnb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amke8"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5o5t3"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52kfb"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urk4e"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5to8"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qt4cq"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eecl7"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wm1g"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15fyd"]
+atlas = ExtResource("2_q3hnb")
+region = Rect2(512, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1qu0b"]
 atlas = ExtResource("1_57olm")
@@ -40,6 +77,38 @@ region = Rect2(448, 30, 64, 34)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_amke8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5o5t3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52kfb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urk4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5to8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qt4cq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eecl7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wm1g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15fyd")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_1qu0b")
 }, {
 "duration": 1.0,
@@ -68,9 +137,11 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qkues"]
+
 [node name="Scout" type="CharacterBody2D"]
-collision_layer = 6
-collision_mask = 4
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("1_ww60s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -78,7 +149,6 @@ position = Vector2(0, -14)
 rotation = -3.14159
 sprite_frames = SubResource("SpriteFrames_uksjx")
 animation = &"idle"
-frame_progress = 0.337054
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = -3.14159
@@ -86,3 +156,26 @@ texture = ExtResource("1_5ql6k")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-16, -2, -8, -6, 0, -17, 8, -6, 16, -2, 5, 3, 5, 10, -5, 10, -5, 3)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, -20)
+scale = Vector2(0.956555, 0.387417)
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(0.983224, 2.44925)
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.87655, 0.438421)
+shape = SubResource("RectangleShape2D_qkues")
+debug_color = Color(0.784314, 0.109804, 1, 0.419608)
+
+[node name="ShootingTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="damaged" from="." to="." method="_on_damaged"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animation_finished"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="ShootingTimer" to="." method="_on_shooting_timer_timeout"]

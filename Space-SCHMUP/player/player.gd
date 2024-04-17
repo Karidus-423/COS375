@@ -1,9 +1,10 @@
 extends CharacterBody2D
 
-
 @export var max_speed = 400.0
 @export var acceleration = 1500.0
 @export var friction = 600.0
+
+signal damaged
 
 var input = Vector2.ZERO
 
@@ -50,6 +51,11 @@ func player_shooting():
 		projectile.add_constant_central_force(Vector2(0,-5000))
 		get_parent().add_child(projectile)
 
+func _on_area_2d_body_entered(_body:Node2D) -> void:
+	hide()
+	damaged.emit()
+	$CollisionPolygon2D.set_deferred("disabled",true)
+
 func player_animation() -> void:
 	if Input.is_action_pressed("ui_right") == true:
 		$PlayerAnimation.play("move_right")
@@ -58,3 +64,6 @@ func player_animation() -> void:
 	else:
 		$PlayerAnimation.play("idle")
 		shield_animation.play("tier-1")
+
+
+
