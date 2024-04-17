@@ -1,0 +1,86 @@
+[gd_scene load_steps=13 format=3 uid="uid://br4bjfh50ma3c"]
+
+[ext_resource type="Texture2D" uid="uid://cpc3gdss3gnt7" path="res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/PNGs/Nautolan Ship - Scout - Base.png" id="1_5ql6k"]
+[ext_resource type="Texture2D" uid="uid://1xtddebujipt" path="res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/PNGs/Nautolan Ship - Scout - Engine Effect.png" id="1_57olm"]
+[ext_resource type="Script" path="res://enemies/enemy_scout/scout.gd" id="1_ww60s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qu0b"]
+atlas = ExtResource("1_57olm")
+region = Rect2(0, 30, 64, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1fhl"]
+atlas = ExtResource("1_57olm")
+region = Rect2(64, 30, 64, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kt5d"]
+atlas = ExtResource("1_57olm")
+region = Rect2(128, 30, 64, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78qqn"]
+atlas = ExtResource("1_57olm")
+region = Rect2(192, 30, 64, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2xq4"]
+atlas = ExtResource("1_57olm")
+region = Rect2(256, 30, 64, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6jwq"]
+atlas = ExtResource("1_57olm")
+region = Rect2(320, 30, 64, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igtge"]
+atlas = ExtResource("1_57olm")
+region = Rect2(384, 30, 64, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8t78"]
+atlas = ExtResource("1_57olm")
+region = Rect2(448, 30, 64, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uksjx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1qu0b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1fhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kt5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_78qqn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2xq4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6jwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igtge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8t78")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="Scout" type="CharacterBody2D"]
+script = ExtResource("1_ww60s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -14)
+rotation = -3.14159
+sprite_frames = SubResource("SpriteFrames_uksjx")
+animation = &"idle"
+frame_progress = 0.646273
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -3.14159
+texture = ExtResource("1_5ql6k")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-16, -2, -8, -6, 0, -17, 8, -6, 16, -2, 5, 3, 5, 10, -5, 10, -5, 3)

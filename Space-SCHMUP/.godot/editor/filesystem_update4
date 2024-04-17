@@ -1,3 +1,7 @@
+res://player/player.gd
 res://player/player.tscn
 res://main/main.tscn
-res://player/player.gd
+res://enemies/enemy_scout/enemy_variation_1.tscn
+res://enemies/enemy_scout/scout.tscn
+res://main/main.gd
+res://enemies/enemy_scout/scout.gd

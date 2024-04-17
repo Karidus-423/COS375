@@ -1,23 +1,83 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712409190
+::res://::1713304350
 icon.svg::CompressedTexture2D::7579453274284684184::1712176594::1712176598::1::::<><>::
-::res://assets/::1712177198
-::res://assets/art/::1712177275
-pico8_invaders_SPLASH.png::CompressedTexture2D::6358283195311393518::1712176795::1712177240::1::::<><>::
-pico8_invaders_sprites.png::CompressedTexture2D::5273069104514466864::1712176805::1712177240::1::::<><>::
-pico8_invaders_sprites_LARGE.png::CompressedTexture2D::2198235221678796736::1712176811::1712177240::1::::<><>::
-::res://assets/art/SHMUP_free/::1712177359
-blue_01.png::CompressedTexture2D::8818065495458248487::1618090280::1712177359::1::::<><>::
-darkgrey_02.png::CompressedTexture2D::3059088614315982147::1618090408::1712177359::1::::<><>::
-enemy_1_1.png::CompressedTexture2D::1203896996892646379::1679948468::1712177359::1::::<><>::
-enemy_1_2.png::CompressedTexture2D::1900766182676248004::1679948470::1712177359::1::::<><>::
-enemy_1_3.png::CompressedTexture2D::804914220599009989::1679948470::1712177359::1::::<><>::
-enemy_2_1.png::CompressedTexture2D::2138653557603244569::1679948478::1712177359::1::::<><>::
-enemy_2_2.png::CompressedTexture2D::3723900795413769982::1679948478::1712177359::1::::<><>::
-enemy_2_3.png::CompressedTexture2D::1920508476219421808::1679948478::1712177359::1::::<><>::
-green_06.png::CompressedTexture2D::4169371387552156248::1618090468::1712177359::1::::<><>::
-metalic_02.png::CompressedTexture2D::4355819217044793165::1618090482::1712177359::1::::<><>::
-orange_03.png::CompressedTexture2D::9015699622803980798::1618090508::1712177359::1::::<><>::
+::res://assets/::1712693942
+::res://assets/art/::1712843758
+shield_4.png::CompressedTexture2D::3948810469776792433::1712843756::1712843758::1::::<><>::
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/::1712693981
+Nautolan - Ships Preview.png::CompressedTexture2D::5043604601661113878::1646901744::1712693981::1::::<><>::
+Readme.txt::TextFile::-1::1660839310::0::1::::<><>::
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/::1660838464
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/Aseprite/::1660838464
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/PNGs/::1712693981
+Nautolan Ship - Battlecruiser - Base.png::CompressedTexture2D::4490732133742840256::1647009940::1712693981::1::::<><>::
+Nautolan Ship - Bomber - Base.png::CompressedTexture2D::7752726993274959626::1647009946::1712693981::1::::<><>::
+Nautolan Ship - Dreadnought - Base.png::CompressedTexture2D::823872340104938851::1647009956::1712693981::1::::<><>::
+Nautolan Ship - Fighter - Base.png::CompressedTexture2D::3693748099657619580::1647009966::1712693981::1::::<><>::
+Nautolan Ship - Frigate - Base.png::CompressedTexture2D::1843709978317242997::1647009974::1712693981::1::::<><>::
+Nautolan Ship - Scout - Base.png::CompressedTexture2D::5831513754257734282::1647009986::1712693981::1::::<><>::
+Nautolan Ship - Support - Base.png::CompressedTexture2D::5131611968486536585::1647009994::1712693981::1::::<><>::
+Nautolan Ship - Torpedo Ship.png::CompressedTexture2D::7289881748607294330::1647010004::1712693981::1::::<><>::
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Destruction/::1660838464
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Destruction/Aseprite/::1660838464
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Destruction/PNGs/::1712693981
+Nautolan Ship - Battlecruiser.png::CompressedTexture2D::5989089417315183276::1647010034::1712693981::1::::<><>::
+Nautolan Ship - Bomber.png::CompressedTexture2D::3021944324441940765::1647010042::1712693981::1::::<><>::
+Nautolan Ship - Dreadnought.png::CompressedTexture2D::6457227752905866481::1647010050::1712693981::1::::<><>::
+Nautolan Ship - Fighter.png::CompressedTexture2D::6411664613412883859::1647010056::1712693981::1::::<><>::
+Nautolan Ship - Frigate.png::CompressedTexture2D::8162570377511277735::1647010064::1712693981::1::::<><>::
+Nautolan Ship - Scout.png::CompressedTexture2D::1760991876237559826::1647010072::1712693981::1::::<><>::
+Nautolan Ship - Support.png::CompressedTexture2D::2622147386496148825::1647010078::1712693981::1::::<><>::
+Nautolan Ship - Torpedo Ship.png::CompressedTexture2D::3812097788309663546::1647010084::1712693981::1::::<><>::
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/Aseprite/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/PNGs/::1712693981
+Nautolan Ship - Battlecruiser - Engine Effect.png::CompressedTexture2D::1340824367008898115::1647010128::1712693981::1::::<><>::
+Nautolan Ship - Bomber - Engine Effect.png::CompressedTexture2D::4842298369600235226::1647010134::1712693981::1::::<><>::
+Nautolan Ship - Dreadnought - Engine Effect.png::CompressedTexture2D::2079193891003019664::1647010142::1712693981::1::::<><>::
+Nautolan Ship - Fighter - Engine Effect.png::CompressedTexture2D::370945217976978155::1647010148::1712693981::1::::<><>::
+Nautolan Ship - Frigate - Engine Effect.png::CompressedTexture2D::7046388747506191929::1647010156::1712693981::1::::<><>::
+Nautolan Ship - Scout - Engine Effect.png::CompressedTexture2D::1873549766998288089::1647010170::1712693981::1::::<><>::
+Nautolan Ship - Support - Engine Effect.png::CompressedTexture2D::3993830419637648426::1647010178::1712693981::1::::<><>::
+Nautolan Ship - Torpedo Ship - Engine Effect.png::CompressedTexture2D::8877301004889632629::1647010186::1712693981::1::::<><>::
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Shields/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Shields/Aseprite/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Shields/PNGs/::1712693981
+Nautolan Ship - Battlecruiser - Shield.png::CompressedTexture2D::1876085193537190305::1647010278::1712693981::1::::<><>::
+Nautolan Ship - Bomber - Shield.png::CompressedTexture2D::924670495963572552::1647010308::1712693981::1::::<><>::
+Nautolan Ship - Dreadnought - Shield.png::CompressedTexture2D::3745334253202266295::1647010318::1712693981::1::::<><>::
+Nautolan Ship - Fighter - Shield.png::CompressedTexture2D::3174140971062637300::1647010328::1712693981::1::::<><>::
+Nautolan Ship - Frigate - Shield.png::CompressedTexture2D::7650889769226387315::1647010286::1712693981::1::::<><>::
+Nautolan Ship - Scout - Shield.png::CompressedTexture2D::8210669669541911913::1647010294::1712693981::1::::<><>::
+Nautolan Ship - Torpedo Ship - Shield.png::CompressedTexture2D::228056551541370494::1647010300::1712693981::1::::<><>::
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapon Effects - Projectiles/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapon Effects - Projectiles/Aseprite/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapon Effects - Projectiles/PNGs/::1712693981
+Nautolan - Bomb.png::CompressedTexture2D::8349988837927913730::1647010372::1712693981::1::::<><>::
+Nautolan - Bullet.png::CompressedTexture2D::627576178327385966::1647010376::1712693981::1::::<><>::
+Nautolan - Ray.png::CompressedTexture2D::5317848276512442598::1647010382::1712693981::1::::<><>::
+Nautolan - Rocket.png::CompressedTexture2D::8250443197734479197::1647010388::1712693981::1::::<><>::
+Nautolan - Spinning Bullet.png::CompressedTexture2D::77291171711286306::1647010398::1712693981::1::::<><>::
+Nautolan - Wave.png::CompressedTexture2D::7040968766233212840::1647010404::1712693981::1::::<><>::
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapons/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapons/Aseprite/::1660838466
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Weapons/PNGs/::1712693981
+Nautolan Ship - Battlecruiser - Weapons.png::CompressedTexture2D::5360687560586131762::1647010442::1712693981::1::::<><>::
+Nautolan Ship - Dreadnought - Weapons.png::CompressedTexture2D::5793236824826514090::1647010448::1712693981::1::::<><>::
+Nautolan Ship - Fighter - Weapons.png::CompressedTexture2D::5450924467671375930::1647010454::1712693981::1::::<><>::
+Nautolan Ship - Frigate - Weapons.png::CompressedTexture2D::4163484113868980784::1647010460::1712693981::1::::<><>::
+Nautolan Ship - Scout - Weapons.png::CompressedTexture2D::8044854494219896126::1647010466::1712693981::1::::<><>::
+Nautolan Ship - Torpedo Ship - Weapons.png::CompressedTexture2D::4877407325157719227::1647010478::1712693981::1::::<><>::
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/_Previews/::1660838478
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/_Previews/Nautolan/::1660838474
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/_Previews/Nautolan/Bases/::1660838474
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/_Previews/Nautolan/Destruction/::1660838474
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/_Previews/Nautolan/Engines/::1660838474
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/_Previews/Nautolan/Projectiles/::1660838474
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/_Previews/Nautolan/Shields/::1660838474
+::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/_Previews/Nautolan/Weapons/::1660838474
+::res://assets/art/SHMUP_free/::1712693712
 player_1.png::CompressedTexture2D::8271554754888781896::1679948956::1712177359::1::::<><>::
 player_2.png::CompressedTexture2D::7772770092212295427::1679948956::1712177359::1::::<><>::
 player_3.png::CompressedTexture2D::9098842736641865065::1679948956::1712177359::1::::<><>::
@@ -29,12 +89,6 @@ player_right-2.png::CompressedTexture2D::409480388079503246::1680054064::1712177
 player_right-3.png::CompressedTexture2D::7115081671675109210::1680054064::1712177359::1::::<><>::
 projectile_1.png::CompressedTexture2D::5671145838580144044::1680054618::1712177359::1::::<><>::
 projectile_2.png::CompressedTexture2D::1808226832707091516::1680054640::1712177359::1::::<><>::
-purple_03.png::CompressedTexture2D::6455583189330650453::1618090522::1712177359::1::::<><>::
-red_01.png::CompressedTexture2D::4273608251899420939::1618090546::1712177359::1::::<><>::
-spritesheet_enemy_1.png::CompressedTexture2D::1511987898520686603::1679948526::1712177359::1::::<><>::
-spritesheet_enemy_2.png::CompressedTexture2D::3742699244061585476::1679948512::1712177359::1::::<><>::
-spritesheet_player.png::CompressedTexture2D::2019675114420819976::1680054150::1712177359::1::::<><>::
-_Readme.txt::TextFile::-1::1680054758::0::1::::<><>::
 ::res://assets/art/SHMUP_free/Explosion/::1712177359
 explosion-1.png::CompressedTexture2D::5056987404534507921::1680053976::1712177359::1::::<><>::
 explosion-2.png::CompressedTexture2D::1777492296973311438::1680053976::1712177359::1::::<><>::
@@ -402,9 +456,12 @@ Randomize48.wav::AudioStreamWAV::390587981016449560::1397959210::1712177162::1::
 Randomize.wav::AudioStreamWAV::1522427845755703813::1397959208::1712177162::1::::<><>::
 ::res://background/::1712190078
 game_background.tscn::PackedScene::5988244742885907565::1712190078::0::1::::<><>::uid://b4hlct7yllx5u::::res://assets/art/SHMUP_free/Space Background/background.png<>uid://dvipqbjfp6phe::::res://assets/art/SHMUP_free/Space Background/nebula_1.png<>uid://b3oh6i4yybmlf::::res://assets/art/SHMUP_free/Space Background/stars_2.png<>uid://526snm1tltwx::::res://assets/art/SHMUP_free/Space Background/nebula_2.png<>res://main/Stars1.gd<>uid://dwvdbwbsnv1dw::::res://assets/art/SHMUP_free/Space Background/stars_1.png
-::res://main/::1712408851
-main.tscn::PackedScene::8594419659179788042::1712408851::0::1::::<><>::uid://crk0rsrysnq4l::::res://background/game_background.tscn<>uid://dfqopa8c1hscn::::res://player/player.tscn
+::res://enemies/::1713304265
+::res://enemies/enemy_scout/::1713305414
+enemy_variation_1.tscn::PackedScene::3639575044372620970::1713305414::0::1::::<><>::uid://cpc3gdss3gnt7::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Designs - Base/PNGs/Nautolan Ship - Scout - Base.png<>uid://1xtddebujipt::::res://assets/art/Foozle_2DS0014_Void_EnemyFleet_3/Nautolan/Engine Effects/PNGs/Nautolan Ship - Scout - Engine Effect.png
+::res://main/::1713304376
+main.tscn::PackedScene::8594419659179788042::1713304376::0::1::::<><>::uid://crk0rsrysnq4l::::res://background/game_background.tscn<>uid://dfqopa8c1hscn::::res://player/player.tscn
 Stars1.gd::GDScript::-1::1712189374::0::1::::<>ParallaxLayer<>::
-::res://player/::1712408851
-player.gd::GDScript::-1::1712408642::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7544113189246182769::1712408851::0::1::::<><>::res://player/player.gd<>uid://dp32ke4k02uei::::res://assets/art/SHMUP_free/player_1.png<>uid://di0gngkg4jj1t::::res://assets/art/SHMUP_free/player_2.png<>uid://d2vsu00xc0dn2::::res://assets/art/SHMUP_free/player_3.png<>uid://do3e53v3y0tp5::::res://assets/art/SHMUP_free/player_left-1.png<>uid://eri7iav2rsl6::::res://assets/art/SHMUP_free/player_left-2.png<>uid://cslp1wd8m5v66::::res://assets/art/SHMUP_free/player_left-3.png<>uid://khclvaefdggs::::res://assets/art/SHMUP_free/player_right-1.png<>uid://f3mc18pfukcs::::res://assets/art/SHMUP_free/player_right-2.png<>uid://c8mumdc0fr8gs::::res://assets/art/SHMUP_free/player_right-3.png
+::res://player/::1713304376
+player.gd::GDScript::-1::1713303823::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7544113189246182769::1713304376::0::1::::<><>::res://player/player.gd<>uid://dp32ke4k02uei::::res://assets/art/SHMUP_free/player_1.png<>uid://di0gngkg4jj1t::::res://assets/art/SHMUP_free/player_2.png<>uid://d2vsu00xc0dn2::::res://assets/art/SHMUP_free/player_3.png<>uid://do3e53v3y0tp5::::res://assets/art/SHMUP_free/player_left-1.png<>uid://eri7iav2rsl6::::res://assets/art/SHMUP_free/player_left-2.png<>uid://cslp1wd8m5v66::::res://assets/art/SHMUP_free/player_left-3.png<>uid://khclvaefdggs::::res://assets/art/SHMUP_free/player_right-1.png<>uid://f3mc18pfukcs::::res://assets/art/SHMUP_free/player_right-2.png<>uid://c8mumdc0fr8gs::::res://assets/art/SHMUP_free/player_right-3.png<>uid://bwi3ljhveuyrp::::res://assets/art/shield_4.png
